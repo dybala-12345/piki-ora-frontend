@@ -1,0 +1,91 @@
+:root {
+  --brand: #0f766e;
+  --brand-dark: #115e59;
+  --bs-primary: #0f766e;
+  --bs-primary-rgb: 15, 118, 110;
+  --bs-link-color: #0f766e;
+  --bs-link-hover-color: #115e59;
+}
+
+body {
+  background: #f4f7f6;
+}
+
+/* Re-colour Bootstrap's primary buttons to the clinic's teal */
+.btn-primary {
+  --bs-btn-bg: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand-dark);
+  --bs-btn-hover-border-color: var(--brand-dark);
+  --bs-btn-active-bg: var(--brand-dark);
+  --bs-btn-disabled-bg: var(--brand);
+  --bs-btn-disabled-border-color: var(--brand);
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--brand);
+  --bs-btn-border-color: var(--brand);
+  --bs-btn-hover-bg: var(--brand);
+  --bs-btn-hover-border-color: var(--brand);
+  --bs-btn-active-bg: var(--brand);
+}
+.nav-pills {
+  --bs-nav-pills-link-active-bg: var(--brand);
+}
+.nav-pills .nav-link { color: #334155; }
+.nav-pills .nav-link.active { color: #fff; }
+
+.site-navbar { background: var(--brand-dark); }
+.site-navbar .nav-link.active { font-weight: 600; }
+.brand-cross {
+  display: inline-block;
+  background: #fff;
+  color: var(--brand);
+  border-radius: 6px;
+  width: 26px;
+  text-align: center;
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.site-footer { background: #e2ebe9; color: #475569; }
+
+.hero {
+  background: linear-gradient(135deg, var(--brand-dark), #14b8a6);
+  color: #fff;
+}
+
+.auth-card { max-width: 420px; }
+.auth-card-wide { max-width: 560px; }
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ccfbf1;
+  color: var(--brand-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.avatar-lg { width: 72px; height: 72px; font-size: 1.5rem; }
+
+.doctor-card { transition: transform 0.15s ease; }
+.doctor-card:hover { transform: translateY(-2px); }
+
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(92px, 1fr));
+  gap: 8px;
+}
+
+.booking-box { background: #f0fdfa; border: 1px solid #99f6e4; }
+
+.admin-sidebar { background: #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06); }
+
+.stat-card { color: inherit; transition: transform 0.15s ease; }
+.stat-card:hover { transform: translateY(-2px); }
+.stat-value { font-size: 2rem; font-weight: 700; color: var(--brand-dark); }
+
+.table { --bs-table-bg: #fff; }
